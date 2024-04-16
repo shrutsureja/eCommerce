@@ -4,4 +4,8 @@ const homePage: RequestHandler = (req, res) => {
 	res.send('Hello, World! ~ Shrut Sureja');
 };
 
-export { homePage };
+const sendPage: RequestHandler = (req: Request, res: Response) => {
+	res.send(`Hello, shrut!`);
+};
+
+export { homePage, sendPage };
